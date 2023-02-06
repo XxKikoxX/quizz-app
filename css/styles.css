@@ -1,0 +1,17 @@
+.body {
+  display: sticky;
+  top: 0;
+  flex-direction: column;
+  background-color: rgb(78, 82, 83);
+}
+.header {
+  background: rgb(14, 16, 19);
+  font-size: 3rem;
+  text-align: center;
+}
+.h1 {
+  color: rgb(0, 255, 247);
+}
+.body-text {
+  color: aliceblue;
+}
