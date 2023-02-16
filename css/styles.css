@@ -16,11 +16,8 @@
     /* Safari, Android, iOS */
       url("../Fonts/rye-v13-latin/rye-v13-latin-regular.svg#Rye") format("svg"); /* Legacy iOS */
 }
-@font-face {
-  font-family: "progress-font";
-  src: url("../progress-font/ProgressPersonalUse-EaJdz.ttf");
-}
 
+/* Hier beginnt der body */
 body {
   flex-direction: column;
   background-color: rgb(62, 196, 240);
@@ -29,16 +26,20 @@ body {
   font-family: "Rye";
   color: rgb(9, 24, 43);
 }
+
 .header {
-  font-family: "progress";
   background: rgb(142, 136, 209);
   text-align: center;
   padding: 20px;
   position: sticky;
   top: 0px;
-  border: 2px solid;
+  border: 5px solid;
+  border-radius: 0 0 50px 50px;
+  border-color: rgb(109, 10, 146);
   margin: 0px;
+  z-index: 1;
 }
+
 .h1 {
   color: rgb(141, 7, 243);
   text-align: center;
@@ -46,6 +47,7 @@ body {
   justify-content: center;
   margin: 0;
 }
+
 section {
   text-align: center;
   border: solid;
@@ -58,28 +60,37 @@ section {
   margin: 50px;
   position: relative;
 }
+
 .card-bookmark {
   position: absolute;
   right: 10px;
   top: -25px;
 }
+
 button {
   text-align: center;
   top: 50px;
   border-color: rgb(244, 243, 243);
   background-color: rgb(182, 108, 186);
 }
+
 footer {
   display: flex;
-
-  justify-content: center;
   background: rgb(142, 136, 209);
-  text-align: center;
   margin: 0px;
   padding: 5px;
-  position: sticky;
+  position: fixed;
   bottom: 0px;
   border: 5px solid;
-  border-radius: 100px;
+  border-radius: 50px 50px 0 0;
   border-color: rgb(109, 10, 146);
+  width: 100%;
+}
+.nav-list {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 100%;
+  border: red solid;
+  right: -100px;
 }
