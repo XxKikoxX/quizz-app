@@ -1,3 +1,21 @@
+/* rye-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Rye";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../Fonts/rye-v13-latin/rye-v13-latin-regular.eot"); /* IE9 Compat Modes */
+  src: url("../Fonts/rye-v13-latin/rye-v13-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../Fonts/rye-v13-latin/rye-v13-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../Fonts/rye-v13-latin/rye-v13-latin-regular.woff") format("woff"),
+    /* Modern Browsers */
+      url("../Fonts/rye-v13-latin/rye-v13-latin-regular.ttf") format("truetype"),
+    /* Safari, Android, iOS */
+      url("../Fonts/rye-v13-latin/rye-v13-latin-regular.svg#Rye") format("svg"); /* Legacy iOS */
+}
 @font-face {
   font-family: "progress-font";
   src: url("../progress-font/ProgressPersonalUse-EaJdz.ttf");
@@ -8,17 +26,21 @@ body {
   background-color: rgb(62, 196, 240);
   margin: 0;
   display: flex;
+  font-family: "Rye";
+  color: rgb(9, 24, 43);
 }
 .header {
+  font-family: "progress";
   background: rgb(142, 136, 209);
   text-align: center;
   padding: 20px;
   position: sticky;
   top: 0px;
   border: 2px solid;
+  margin: 0px;
 }
 .h1 {
-  color: rgb(4, 7, 7);
+  color: rgb(141, 7, 243);
   text-align: center;
   position: flex;
   justify-content: center;
@@ -33,19 +55,31 @@ section {
   padding: 20px;
   border: 2px solid black;
   border-radius: 20px;
-  margin: 20px;
+  margin: 50px;
+  position: relative;
+}
+.card-bookmark {
+  position: absolute;
+  right: 10px;
+  top: -25px;
 }
 button {
   text-align: center;
   top: 50px;
   border-color: rgb(244, 243, 243);
-  background-color: rgb(60, 157, 68);
+  background-color: rgb(182, 108, 186);
 }
 footer {
+  display: flex;
+
+  justify-content: center;
   background: rgb(142, 136, 209);
   text-align: center;
+  margin: 0px;
   padding: 5px;
   position: sticky;
   bottom: 0px;
-  border: 2px solid;
+  border: 5px solid;
+  border-radius: 100px;
+  border-color: rgb(109, 10, 146);
 }
